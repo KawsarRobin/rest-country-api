@@ -7,7 +7,7 @@ const loadData = () => {
   const searchText = inputFeild.value;
   if (searchText === "") {
     errorNotify.innerHTML = `
-      <h2 class="text-danger">Please write something!!!</h2>
+      <h2 class="text-danger text-center">Please write something!!!</h2>
       `;
     //clear details when researched
     countryContainer.textContent = "";
@@ -30,7 +30,7 @@ const displayContries = (countries) => {
   //   console.log(countries);
   if (countries.status === 404) {
     errorNotify.innerHTML = `
-    <h2 class="text-danger">No result found!!!</h2>
+    <h2 class="text-danger text-center">No result found!!!</h2>
     `;
   } else {
     countries.forEach((country) => {
